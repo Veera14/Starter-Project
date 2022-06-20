@@ -8,19 +8,34 @@ const HomeScreen = ({ navigation }) => {
   <Text style={styles.text}>Hi, Welcome to the Native World.</Text>
 
   <Button
-  onPress = {() => navigation.navigate('Components')}
-  title = "Go to Components Screen"
+    onPress = {() => navigation.navigate('Components')}
+    title = "Go to Components Screen"
   />
 
   <Button
     onPress = {() => navigation.navigate('List')}
-      title = "Go to List Screen"
+    title = "Go to List Screen"
   />
 
     <Button
       onPress = {() => navigation.navigate('Image')}
-        title = "Go to Image Screen"
+      title = "Go to Image Screen"
     />
+
+    <Button
+       onPress = {() => navigation.navigate('Counter')}
+       title = "Go to Counter Screen"
+     />
+
+     <Button
+          onPress = {() => navigation.navigate('Color')}
+          title = "Go to Color Screen"
+      />
+
+     <Button
+          onPress = {() => navigation.navigate('Square')}
+          title = "Go to Square Screen"
+      />
 
   </View>
   );
@@ -29,7 +44,7 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
-  },
+  }
 });
 
 export default HomeScreen;
